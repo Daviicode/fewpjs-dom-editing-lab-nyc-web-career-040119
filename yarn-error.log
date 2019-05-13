@@ -1,0 +1,58 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js install --no-lockfile
+
+PATH: 
+  /var/opt/rails/bin:/var/opt/httpserver/bin:/var/opt/atom/bin:/var/opt/shotgun/bin:/var/opt/rackup/bin:/var/opt/jekyll/bin:/usr/local/rvm/gems/ruby-2.6.1/bin:/usr/local/rvm/gems/ruby-2.6.1@global/bin:/usr/local/rvm/rubies/ruby-2.6.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/rvm/bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  8.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/bright-cron-3172/fewpjs-dom-editing-lab-nyc-web-career-040119/package.json: Unexpected token , in JSON at position 542
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:304:30)
+      at /usr/share/yarn/lib/cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "javascript-lab",
+    "version": "1.0.0",
+    "description": "A JavaScript lab",
+    "main": "index.js",
+    "scripts": {
+      "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
+    },
+    "author": "flatironschool",
+    "license": "Included in Repo",
+    "devDependencies": {
+      "babel-core": "6.26.3",
+      "babel-preset-env": "1.7.0",
+      "chai": "4.1.2",
+      "file-system": "2.2.2",
+      "http-server": "^0.11.1",
+      "jsdom": "9.2.1",
+      "mocha": "5.2.0",
+      "mocha-jsdom": "~1.1.0",
+      "mocha-multi": "1.0.1"
+    }
+  },
+  {
+      "scripts": {
+          "start": "http-server ."
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
